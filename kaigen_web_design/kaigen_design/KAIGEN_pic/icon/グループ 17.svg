@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <g id="グループ_17" data-name="グループ 17" transform="translate(-951 -4889)">
+    <path id="envelope-solid" d="M3.281,64C1.47,64,0,65.96,0,68.375a4.991,4.991,0,0,0,1.312,3.5L16.187,86.75a1.773,1.773,0,0,0,2.625,0L33.687,71.875A4.991,4.991,0,0,0,35,68.375C35,65.96,33.53,64,31.719,64ZM0,74.208V93.167C0,96.384,1.962,99,4.375,99h26.25C33.038,99,35,96.384,35,93.167V74.208L20.125,89.083a3.532,3.532,0,0,1-5.25,0Z" transform="translate(952.744 4825.418)"/>
+    <g id="長方形_44" data-name="長方形 44" transform="translate(951 4889)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="39" height="39" stroke="none"/>
+      <rect x="0.5" y="0.5" width="38" height="38" fill="none"/>
+    </g>
+  </g>
+</svg>

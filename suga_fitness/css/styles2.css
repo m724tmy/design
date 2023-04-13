@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+.topcontents {
+    padding:0 80px 0 80px;
+}
+
+.heading {
+    font-size: 1.3rem;
+}
+
+.about-text {
+    font-size :1.2em;
+}
+
+.top_about_bottom {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border-top: 3px solid #f4623a;
+    border-bottom: 3px solid #f4623a;
+    margin-top: 85px;
+}
+
+.top_about_bottom p {
+margin:17px 0; 
+}
+
+.grid_img {
+    overflow: hidden;
+}
+
+.btn-grid:hover {
+    opacity: 0.6;
+    transition-duration: 0.8s;
+}
+.grid_img:hover {
+    opacity: 0.6;
+    transition-duration: 0.8s;
+}
+
+
+
+.bd-placeholder-img{
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+
+
+.join_free{
+    padding-top:40px;
+    padding-bottom:60px;
+}
+
+
+hr.divider2 {
+    max-width: 10rem;
+    border-width: 0.2rem;
+    border-color: #f4623a;
+  }
+
+  .access_p{
+      float:left;
+  }
+
+  .pickup-section{
+    background: linear-gradient(to bottom, rgb(212 212 212 / 56%) 0%, rgb(220 152 95 / 60%) 100%), url(../sozai/background6.png);
+    background-size: cover;
+    color: #FFF;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pickup h2 {
+    color: #000;
+    text-shadow: 0 0 10px #fff,0 0 15px #fff;
+    font-size: 30px;
+　　}
+
+.pickup-text {
+    text-shadow: 0 0 13px #fff,0 0 15px #fff;
+    color: #000;
+    background-color: rgb(255 255 255 / 73%); 
+    border-radius: 1rem;
+    padding:5px 5px;
+    text-align: center;
+}
+
+
+  
+
+  .bg-primary2 {
+    color: #fff;
+    background: url("../sozai/suga_mit.jpeg");
+    text-align: center;
+    background-size: cover;
+    /* padding: 100px 0 20px; */
+    height: 600px;
+  }
+
+  .bg-primary2 h2 {
+      font-size: 2.6rem;
+  }
+
+  .page-section2 {
+    padding: 4rem 0;
+  }
+
+.price_btn a{
+  color: #3e3a39;
+ border: 5px solid #141414;
+ font-size:16px;
+}
+
+  /* css plugin */
+  .btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer{
+    display: block;
+  }
+  
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
+  /* インスタグラム　ボタン */
+ .insta_btn {
+    display: inline-block;
+    text-align: center;/*中央揃え*/
+    color: #2e6ca5;/*文字色*/
+    font-size: 20px;/*文字サイズ*/
+    text-decoration: none;/*下線消す*/
+  }
+  
+  .insta_btn:hover {/*ホバー時*/
+    color:#668ad8;/*文字色*/
+    transition: .5s;/*ゆっくり変化*/
+  }
+  
+  .insta_btn .insta{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 50px;/*幅*/
+    height: 50px;/*高さ*/
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 13px;/*角丸に*/
+  
+  }
+  
+  .insta_btn .insta:before{/*グラデーションを重ねるため*/
+    content: '';
+    position: absolute;/*絶対配置*/
+    top: 23px;/*ずらす*/
+    left: -18px;/*ずらす*/
+    width: 60px;/*グラデーションカバーの幅*/
+    height: 60px;/*グラデーションカバーの高さ*/
+    background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+  }
+  
+  .insta_btn .fa-instagram {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 35px;/*アイコンサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+  }
+
+  .insta_btn .insta{
+    box-shadow: 0px 1px 2px rgba(25, 25, 25, 0.50);
+    transition: .4s;
+  }
+  .insta_btn .insta:hover{
+    box-shadow: 0px 2px 3px rgba(25, 25, 25, 0.50);
+  }
+
+ 
+
+/* メディアクエリ */
+
+.btn-call {
+    
+}
+
+.fa-phone-alt {
+    margin-right:10px;
+}
+@media (max-width: 450px) {
+    .navbar-brand{
+        font-size: 1rem;
+    }
+
+
+    header.masthead {
+        width:100%;
+      height: 400px;
+    
+      background-size:cover ;
+    }
+    header.masthead p {
+
+      font-size: 15px;
+    }
+    header.masthead h1 {
+      font-size: 25px;
+    }
+    header.masthead a {
+        margin-bottom:10px;
+    }
+
+  }
+
+
+.position{
+  text-align: center;
+  background: #FFF;
+  padding: 40px 0;
+  position: relative;
+}
+
+
+/* 別ページ　html */
+
+.breadcrumb {
+    background:transparent;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "»";
+  }
+
+
+/* ジムのご案内　about.html */
+.about_header {
+padding-top:10rem;
+padding-bottom: calc(10rem - 4.5rem);
+background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../sozai/facillity/facillity_header.jpeg");
+background-position:bottom;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-size: cover;
+}
+
+.about_header h1 {
+    font-size:2.25rem;
+}
+
+
+
+/* 料金表　メニュー price.html */
+
+.join_btn {
+    background-color: #fff;
+    color: #3e3a39;
+    border: 5px solid #141414;
+    font-size:16px;
+    padding: 1.25rem 2.25rem;
+    border-radius: 1rem;
+
+}
+
+.join_btn:hover {
+    background-color: #3e3a39;
+    color: #fff;
+    border: 5px solid #6c757d;
+    transition: all 0.5s;
+}
+
+
+
+
+.try_list {
+    font-size: 0;
+    text-align: center;
+    padding:0;
+}
+
+
+.try_list_item {
+    /* font-size: 1.4rem; */
+    display: inline-block;
+}
+
+
+.text-heading {
+    border-left: 4px solid #e60012;
+    /* font-size: 2.4rem; */
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+}
+
+  .entrystep_test dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .entrystep_test dt {
+    margin: 0 0 10px 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+   
+  }
+  .entrystep_test dd {
+    margin: 0 0 10px 30px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }

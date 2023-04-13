@@ -1,0 +1,932 @@
+body {
+  font-family: 'Gotham', sans-serif;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+  background-color: rgba(238, 212, 183, 0.71);
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+.rlt {
+  position: relative;
+}
+
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+
+.wrapper {
+  padding-top: 73px;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+
+#g-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  transition: all 0.6s;
+}
+
+#g-nav.panelactive {
+  left: 0;
+}
+
+#g-nav.panelactive #g-nav-list {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#g-nav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+
+/*========= ボタンのためのCSS ===============*/
+
+
+/*--------------------------------
+ header
+---------------------------------*/
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.header-logo {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: 0.01em;
+  width: 80px;
+  height: 50px;
+}
+
+.header-logo a {
+  color: #333;
+}
+
+.gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gnav-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.gnav-item a:hover:after {
+  width: 100%;
+}
+
+
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
+
+.mv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+  text-shadow: 0 0 15px #666;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#header:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("../img2/mv-bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.mv-logo {
+  font-size: 4rem;
+  text-shadow: -2px 5px 4px black;
+  line-height: 1.1;
+}
+
+.mv-subtitle {
+  margin-top: 30px;
+  font-size: 2.3rem;
+}
+
+.border {
+  display: inline-block;
+  margin: 1.1rem 0 0 0;
+}
+
+.border span {
+  display: block;
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  background: #535353;
+}
+
+.border span:first-child {
+  margin-bottom: 1.4rem;
+}
+
+.border span:last-child {
+  margin-left: 54px;
+}
+
+#container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(238, 212, 183);
+}
+
+.title .border span:first-child {
+  margin-bottom: 1.4rem;
+}
+
+
+/*--------------------------------
+ Works
+---------------------------------*/
+
+.slider {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+}
+
+.works {
+  height: 100vh;
+}
+
+.works-list {
+  margin-top: 120px;
+}
+
+.works_title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 20px 138px;
+  text-align: left;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.works_text {
+  text-align: left;
+  margin-left: 138px;
+  width: 530px;
+  font-size: 15px;
+}
+
+.works-img img {
+  border: 1px solid #e6e6e6;
+}
+
+.works-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.works-info {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+
+/*--------------------------------
+ About
+---------------------------------*/
+
+.about {
+  height: 100vh;
+}
+
+.about_title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 20px 138px;
+  text-align: left;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.profile {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.profile-border {
+  border-left: 2px solid #CB8643;
+  margin: 10px;
+  height: 54vh;
+  display: block;
+}
+
+.profile-text {
+  width: 45%;
+  height: auto;
+  padding: 40px 10px;
+}
+
+.profile-text p {
+  line-height: 2;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.profile-text p:last-child {
+  text-align: center;
+}
+
+.about_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #CB8643;
+  line-height: 1;
+  font-weight: bold;
+  padding: 18px 32px;
+  border-radius: 50px;
+  transition: .3s;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translate3d(0, -5%, 0);
+  opacity: 1;
+}
+
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+
+.skill_section {
+  height: auto;
+}
+
+.skill_title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.skill_container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10% 0 0 10%;
+  align-items: flex-end;
+}
+
+.skill_box {
+  width: 30%;
+  border: 2px solid #CB8643;
+  display: block;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 13%);
+  margin: 10px;
+  padding: 0 40px;
+}
+
+.skill_box:first-child {
+  margin-right: 0;
+}
+
+.skill_box h3 {
+  font-size: 1.5rem;
+  margin: 0 0 30px 0;
+}
+
+.skill_box p {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 0 0 30px 0;
+}
+
+.skill-img-wrapper {
+  overflow: hidden;
+  width: 30%;
+  height: 60vh;
+}
+
+.skill-image {
+  height: 60vh;
+  background: url(../img2/skill_bag.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+/*--------------------------------
+ Contact
+---------------------------------*/
+
+.contact {
+  text-align: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+
+
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4c4c4c;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+
+.footer {
+  padding: 30px;
+  background-color: #333;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #797979;
+}
+
+
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
+
+.article {
+  padding: 80px 0;
+}
+
+.article-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article-img {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.article-body {
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 20px 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.article-body h3 {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+}
+
+.article-body h3:not(:first-child) {
+  margin-top: 50px;
+}
+
+.article-body h3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  border-radius: 3px;
+  background-color: #333;
+}
+
+.article-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.home-link {
+  text-align: center;
+}
+
+
+/* about-page  */
+
+.about_profile {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_main h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.sub_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.about_main table {
+  width: 80%;
+  margin-bottom: 20px
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.skill-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  margin-bottom: 10px;
+}
+
+.skill-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/*media Queries 1100
+----------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  /* about */
+  .about {
+    height: auto;
+  }
+  .profile {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-img {
+    padding-bottom: 20px;
+    width: 65%;
+  }
+  .profile-border {
+    display: none;
+  }
+  .profile-text {
+    border-top: 2px solid #CB8643;
+    width: 65%;
+    height: auto;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  /* スキル */
+  .skill-img-wrapper {
+    overflow: hidden;
+    width: 30%;
+    height: 60vh;
+  }
+  .skill-image {
+    height: 60vh;
+    background: url(../img2/skill_bag.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+
+/*media Queries 767
+----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  /* 見出し */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .lead {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  /* レイアウト */
+  .wrapper {
+    padding-top: 57px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  /* ヘッダー */
+  .header .container {
+    padding: 15px;
+  }
+  .header-logo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .gnav-item a {
+    font-size: 10px;
+  }
+  .gnav-item a:after {
+    display: none;
+  }
+  /*  メインビジュアル */
+  .mv-container {
+    padding: 0 20px;
+  }
+  .mv-logo {
+    padding-top: 70px;
+    font-size: 3rem;
+    text-shadow: -2px 5px 4px black;
+    line-height: 1.1;
+  }
+  .mv-title {
+    font-size: 30px;
+  }
+  .mv-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .mv-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  /* Works */
+  .works_title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #333;
+  }
+  .works_text {
+    text-align: center;
+    margin: 10px 0 0 0;
+    width: auto;
+    font-size: 15px;
+  }
+  .works-name {
+    font-size: 12px;
+  }
+  .works-info {
+    margin-top: 3px;
+  }
+  .works-list {
+    justify-content: space-between;
+  }
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  /* Skill */
+  .skill_container {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skill_box {
+    width: 100%;
+    border: 2px solid #CB8643;
+    display: block;
+    box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgb(0 0 0 / 13%);
+    margin: 10px;
+  }
+  .skill_box:first-child {
+    margin-right: 10px;
+  }
+  .skill-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .skill-img-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+  }
+  .skill-image {
+    height: 30vh;
+    background: url(../img2/skill_bag.jpg) no-repeat center;
+    background-size: cover;
+  }
+  /* About */
+  .about_title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #333;
+  }
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .profile-text {
+    border-top: 2px solid #CB8643;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .profile-text p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+  .profile-body p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+  /* 下層ページ */
+  .article {
+    padding: 50px 0;
+  }
+  .article-body h3 {
+    font-size: 16px;
+    padding-left: .8em;
+  }
+  .article-body h3:not(:first-child) {
+    margin-top: 30px;
+  }
+  .article-body p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+}

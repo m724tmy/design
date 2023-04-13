@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="64" viewBox="0 0 51 64">
+  <g id="グループ_20" data-name="グループ 20" transform="translate(426 176)">
+    <g id="長方形_45" data-name="長方形 45" transform="translate(-426 -176)" fill="none" stroke="#707070" stroke-width="1" opacity="0.001">
+      <rect width="51" height="64" stroke="none"/>
+      <rect x="0.5" y="0.5" width="50" height="63" fill="none"/>
+    </g>
+    <g id="グループ_16" data-name="グループ 16" transform="translate(44.9 272)">
+      <g id="多角形_1" data-name="多角形 1" transform="translate(-470.109 -448)" fill="none">
+        <path d="M17.727,0,35.453,51H0Z" stroke="none"/>
+        <path d="M 17.72668838500977 6.091712951660156 L 2.812534332275391 48.99998474121094 L 32.64084243774414 48.99998474121094 L 17.72668838500977 6.091712951660156 M 17.72668838500977 -3.814697265625e-06 L 35.45337677001953 50.99998474121094 L 0 50.99998474121094 L 17.72668838500977 -3.814697265625e-06 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="多角形_2" data-name="多角形 2" transform="translate(-462.717 -448)" fill="none">
+        <path d="M17.727,0,35.453,51H0Z" stroke="none"/>
+        <path d="M 17.72668838500977 6.091712951660156 L 2.812534332275391 48.99998474121094 L 32.64084243774414 48.99998474121094 L 17.72668838500977 6.091712951660156 M 17.72668838500977 -3.814697265625e-06 L 35.45337677001953 50.99998474121094 L 0 50.99998474121094 L 17.72668838500977 -3.814697265625e-06 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="多角形_3" data-name="多角形 3" transform="translate(-454.837 -448)" fill="none">
+        <path d="M17.468,0,34.937,51H0Z" stroke="none"/>
+        <path d="M 17.46845626831055 6.172122955322266 L 2.799102783203125 49 L 32.13780975341797 49 L 17.46845626831055 6.172122955322266 M 17.46845626831055 -3.814697265625e-06 L 34.93691635131836 51 L -3.814697265625e-06 51 L 17.46845626831055 -3.814697265625e-06 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="楕円形_1" data-name="楕円形 1" transform="matrix(0.819, 0.574, -0.574, 0.819, -465.581, -430.1)" fill="none" stroke="#707070" stroke-width="2">
+        <ellipse cx="16.363" cy="4.636" rx="16.363" ry="4.636" stroke="none"/>
+        <ellipse cx="16.363" cy="4.636" rx="15.363" ry="3.636" fill="none"/>
+      </g>
+    </g>
+    <text id="Kaigen" transform="translate(-419.742 -114)" font-size="11" font-family="Gotham-Bold, Gotham" font-weight="700"><tspan x="0" y="0">Kaigen</tspan></text>
+    <rect id="長方形_41" data-name="長方形 41" width="51" height="64" transform="translate(-426 -176)" fill="none" opacity="0.953"/>
+  </g>
+</svg>
